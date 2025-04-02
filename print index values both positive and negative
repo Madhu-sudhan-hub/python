@@ -1,0 +1,24 @@
+l = [10,49,True,30.5,'python',59+10j]
+
+x = len(l)
+
+for i in range(x):
+    
+print(l[i],"is available at positive index :",i,"and negative index is :",i-x)
+
+
+Output :-
+
+10 is available at positive index : 0 and negative index is : -6
+
+49 is available at positive index : 1 and negative index is : -5
+
+True is available at positive index : 2 and negative index is : -4
+
+30.5 is available at positive index : 3 and negative index is : -3
+
+python is available at positive index : 4 and negative index is : -2
+
+(59+10j) is available at positive index : 5 and negative index is : -1
+
+
