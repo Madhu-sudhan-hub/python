@@ -1,0 +1,35 @@
+a = input("Enter the first number:")
+
+b = input("Enter the second number:")
+
+c = input("Enter the Third number:")
+
+
+if a>b and a>c :
+  
+  print("a is bigger than the other two numbers")
+
+elif b>a and b>c :
+    
+print("b is bigger than the other two numbers")
+
+elif c>a and c>b :
+   
+ print("c is bigger than the other two numbers")
+ 
+   
+else :
+  
+  print("please give the three values as unique")
+    
+
+
+Output :-
+
+Enter the first number:76
+
+Enter the second number:98
+
+Enter the Third number:78
+
+b is bigger than the other two numbers

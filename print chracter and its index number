@@ -1,0 +1,24 @@
+string = str(input("Enter any word:"))
+
+i = 0
+
+for x in string :
+   
+ print("The character at",i,"index is:",x)
+  
+  i=i+1
+
+
+Output :-
+
+Enter any word:madhu
+
+The character at 0 index is: m
+
+The character at 1 index is: a
+
+The character at 2 index is: d
+
+The character at 3 index is: h
+
+The character at 4 index is: u

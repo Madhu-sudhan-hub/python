@@ -1,0 +1,33 @@
+list = eval(input("Enter a list of numbers:"))
+
+sum = 0
+
+for x in list :
+   
+ print(x)
+    
+sum = sum+x
+   
+ print("The sum value:",sum)
+
+
+output :-
+
+Enter a list of numbers:[1,34,23,55]
+
+1
+
+The sum value: 1
+
+34
+
+The sum value: 35
+
+23
+
+The sum value: 58
+
+55
+
+The sum value: 113
+

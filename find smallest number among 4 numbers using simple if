@@ -1,0 +1,37 @@
+a = int(input("Enter the first number:"))
+
+b = int(input("Enter the second number:"))
+
+c = int(input("Enter the third number:"))
+
+d = int(input("Enter the fourth number:"))
+
+
+s = a
+
+if b<s:
+
+    s=b
+
+if c<s:
+ 
+  s=c
+
+if d<s:
+  
+ s=d
+
+print("The smaller number is:",s)
+
+Output :-
+
+Enter the first number:12
+
+Enter the second number:34
+
+Enter the third number:56
+
+Enter the fourth number:21
+
+The smaller number is: 12
+

@@ -1,0 +1,20 @@
+a = int(input("Enter first number:"))
+
+b = int(input("Enter second number:"))
+
+if a >=b :
+   
+ print("The given number is Bigger")
+
+else :
+   
+  print("The given number is smaller")
+
+
+Output :-
+
+Enter first number:56
+
+Enter second number:34
+
+The given number is Bigger
