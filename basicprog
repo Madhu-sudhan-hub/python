@@ -1,0 +1,194 @@
+a = 10
+
+b = 30
+add=a+b
+
+sub=a-b
+
+mul=a*b
+
+div=a/b
+
+mod=a%b
+
+fd=a//b
+
+ex=a**b
+
+print(add)
+
+print(sub)
+
+print(mul)
+
+print(mod)
+
+print(fd)
+
+print(ex)
+
+
+Output:-
+40
+
+-20
+
+300
+
+10
+
+0
+
+1000000000000000000000000000000
+
+
+-----------------------------------------------------------------
+a=int(input("Enter first number:"))
+
+b=int(input("Enter second number:"))
+
+add=a+b
+
+sub=a-b
+
+mul=a*b
+
+div=a/b
+
+mod=a%b
+
+fd=a//b
+
+ex=a**b
+print(add)
+
+print(sub)
+
+print(mul)
+
+print(div)
+
+print(mod)
+
+print(fd)
+
+print(ex)
+
+
+Output:-
+Enter first number:60
+
+Enter second number:40
+
+100
+
+20
+
+2400
+
+1.5
+
+20
+
+1
+
+133674945388437340678388459765760000000000000000000000000000000000000000
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+a=10
+
+b=20
+
+print(a<b)
+
+print(a<=b)
+
+print(a>=b)
+
+print(a==b)
+
+print(a!=b)
+
+
+Output:-
+True
+
+True
+
+False
+
+False
+
+True
+
+--------------------------------------------------------
+x,y=5,7
+
+print("Before swapping:",x,y)
+
+x,y=y,x
+
+print("After swapping:",x,y)
+
+
+Output:-
+Before swapping: 5 7
+
+After swapping: 7 5
+
+
+-------------------------------------------------------
+height=eval(input("Enter the height of the triangle:"))
+
+base=eval(input("Enter the base of the triangle:"))
+
+area=(0.5)*base*height
+
+print("The area of the triangle:",area)
+
+
+Output:-
+Enter the height of the triangle:10
+
+Enter the base of the triangle:54
+
+The area of the triangle: 270.0
+
+
+--------------------------------------------------------------------------
+length=int(input("Enter the length of rectangle:"))
+
+breadth=int(input("Enter the breadth of rectangle:"))
+
+area=length*breadth
+
+parimeter=2*(length*breadth)
+
+print("The area of rectangle is :",area)
+
+print("The parimeter of rectangle is:",parimeter)
+
+Output:-
+Enter the length of rectangle:10
+
+Enter the breadth of rectangle:12
+
+The area of rectangle is : 120
+
+The parimeter of rectangle is: 240
+
+--------------------------------------------------------------------------
+diameter=int(input("Enter the diameter:"))
+
+radius=diameter/2
+
+print("The radius of the circle is:",radius)
+
+Output:-
+Enter the diameter:20
+
+The radius of the circle is: 10.0
+
+
+

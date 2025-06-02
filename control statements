@@ -1,0 +1,180 @@
+name=input("Enter your name:")
+
+age=int(input("Enter your age:"))
+
+if age>18:
+   
+ print("congratulations",name,",your eligible for voting!")
+
+Output:-
+Enter your name:"madhu"
+
+Enter your age:22
+
+congratulations "madhu" ,your eligible for voting!
+
+
+---------------------------------------------------------------------------------------
+num=int(input("Enter a number:"))
+
+if num%2 == 0:
+ 
+ print(num,"is even")
+
+else:
+  
+print(num,"is odd")
+
+Output:-
+Enter a number:32
+
+32 is even
+
+
+----------------------------------------------------------------------------
+num=int(input("Enter a Number:"))
+
+if num == 0:
+print("zero")
+
+elif num == 1:
+   
+ print("one")
+
+elif num == 2:
+  
+  print("two")
+
+elif num ==3:
+ 
+   print("three")
+
+else:
+   
+ print("Number out of range")
+
+Output:-
+Enter a Number:1
+
+one
+
+
+----------------------------------------------------------------------------
+num = int(input("Enter a number:"))
+
+if num>=1 and num<=100:
+  
+  print("The number",num,"in between number")
+
+else:
+  
+  print("The number",num,"is not between number")
+
+Output:-
+Enter a number:57
+
+The number 57 in between number
+
+
+------------------------------------------------------------------------
+n = int(input("Enter the value of n:"))
+
+count = 0
+
+num = 5
+
+while count<n:
+   
+ print(num)
+  
+  num+=5
+ 
+   count+=1
+    
+
+Output:-
+Enter the value of n:6
+
+5
+
+10
+
+15
+
+20
+
+25
+
+30
+
+----------------------------------------------------------------------
+mylist = input("enter a list of numbers seperated by space:")
+
+mylist = list(map(int,mylist.split()))
+sum=0
+
+for x in mylist:
+  
+  print(x)
+   
+ sum=sum+x
+ 
+   print("The sum of the numbers is:",sum)
+  
+Output:-
+enter a list of numbers seperated by space:1
+ 34
+ 23
+ 12
+1
+
+The sum of the numbers is: 1
+
+34
+The sum of the numbers is: 35
+
+23
+The sum of the numbers is: 58
+
+12
+The sum of the numbers is: 70
+
+---------------------------------------------------------------
+for i in range(1,10):
+ 
+   if i==5:
+    
+    continue
+
+    if i==8:
+     
+   break
+  
+  print(i)
+
+Output:-
+1
+
+2
+
+3
+
+4
+
+6
+
+7
+
+
+---------------------------------------------------------------
+num=0
+while num<=20:
+    if num%2 ==0:
+       print(num,end=",")
+    num+=1
+
+Output:-
+0,2,4,6,8,10,12,14,16,18,20
+--------------------------------------------------------------------
+
+

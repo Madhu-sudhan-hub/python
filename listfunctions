@@ -1,0 +1,204 @@
+mylist =[]
+
+n = int(input("Enter any number:"))
+
+for x in range(n):
+ 
+   num = int(input("Enter a number:"))
+   
+ mylist.append(num)
+ 
+   print("my updated list is:",mylist)
+
+Output:-
+Enter any number:5
+
+Enter a number:23
+
+my updated list is: [23]
+
+Enter a number:43
+
+my updated list is: [23, 43]
+
+Enter a number:65
+
+my updated list is: [23, 43, 65]
+
+Enter a number:21
+
+my updated list is: [23, 43, 65, 21]
+
+Enter a number:42
+
+my updated list is: [23, 43, 65, 21, 42]
+
+
+-----------------------------------------------------------
+l = [10,20,30,"sravani",(10+20j),True]
+
+print(l[3])
+
+print(l[-2])
+
+print(l[1:4])
+
+print(l)
+
+l.remove(30)
+
+print(l)
+
+Output:-
+sravani
+
+(10+20j)
+
+[20, 30, 'sravani']
+
+[10, 20, 30, 'sravani', (10+20j), True]
+
+[10, 20, 'sravani', (10+20j), True]
+
+
+------------------------------------------------------
+
+l = [10,20,30,40,60,True,163]
+
+print(len(l))
+
+print(l)
+
+print(max(l))
+
+print(min(l))
+
+Output:-
+
+7
+
+[10, 20, 30, 40, 60, True, 163]
+
+163
+
+True
+-----------------------------------------------------------
+mylist = [8,2,3,0,7]
+
+sum = 0
+
+for i in mylist:
+  
+  sum = sum+i
+ 
+   print("The Sum is :",sum)
+    
+
+Output:-
+The Sum is : 8
+
+The Sum is : 10
+The Sum is : 13
+
+The Sum is : 13
+
+The Sum is : 20
+
+----------------------------------------------------
+s = input("Enter the string:")
+
+print(s.split())
+
+Output:-
+Enter the string:madhu is a good man
+
+['madhu', 'is', 'a', 'good', 'man']
+
+-----------------------------------------------------
+n = int(input("Enter the value of n:"))
+
+mylist = []
+
+for i in range(n):
+  
+  num = int(input("Enter a number:"))
+ 
+   mylist.append(num)
+  
+  print("Even numbers are")
+   
+ print("[",end="")
+   
+ for num in mylist:
+    
+    if num%2 == 0:
+          
+  print(num,end=",")
+    
+        print("]")
+
+Output:-
+Enter the value of n:5
+
+Enter a number:12
+Even numbers are
+[12,]
+
+Enter a number:13
+
+Even numbers are
+[12,]
+
+Enter a number:15
+
+Even numbers are
+[12,]
+
+Enter a number:16
+
+Even numbers are
+[12,
+16,]
+
+Enter a number:18
+Even numbers are
+[12,16,
+18,]
+
+------------------------------------------------------------------------
+l = [10,20,30,"Hari",True,(10+13j),False,True]
+
+print(l)
+
+x=l.copy()
+
+print(x)
+
+l.pop(3)
+
+print(l)
+
+del l[2]
+
+print(l)
+
+l.reverse()
+
+print(l)
+
+l.clear()
+
+print(l)
+
+Output:-
+[10, 20, 30, 'Hari', True, (10+13j), False, True]
+
+[10, 20, 30, 'Hari', True, (10+13j), False, True]
+
+[10, 20, 30, True, (10+13j), False, True]
+
+[10, 20, True, (10+13j), False, True]
+[True, False, (10+13j), True, 20, 10]
+
+[]
+
