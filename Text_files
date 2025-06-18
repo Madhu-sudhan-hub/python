@@ -1,0 +1,72 @@
+f = open("C:\\Users\\MICLAB\\Desktop\\demo.txt",'r')
+print ("file object is opened")
+print(f)
+data = f.read()
+print(data)
+
+Output:-
+
+file object is opened
+<_io.TextIOWrapper name='C:\\Users\\MICLAB\\Desktop\\demo.txt' mode='r'
+encoding='cp1252'>
+python is open and python is very easy language
+--------------------------------------------------------------------------------------------------------------------------
+file_path = "output.txt"
+with open(file_path, "w") as file:
+file.write("Hello, World!\n")
+file.write("This is a sample text.")
+print("Content written to", file_path)
+
+Output:-
+Content written to output.txt
+------------------------------------------------------------------------------------------------------------
+f = open("C:\\Users\\MICLAB\\Desktop\\demo.txt",'r')
+data = f.read()
+print('Total avaliable charecters in a given file is :',len(data))
+
+Output:-
+
+Total avaliable charecters in a given file is : 48
+---------------------------------------------------------------------------------------------------------
+f = open("C:\\Users\\MICLAB\\Desktop\\demo.txt",'r')
+data = f.read()
+lw = data.split()
+print('Total number of words in a given file is :',len(lw))
+print('Available words are :',lw)
+
+Output:-
+
+Total number of words in a given file is : 9
+Available words are : ['python', 'is', 'open', 'and', 'python', 'is', 'very', 'easy', 'language']
+------------------------------------------------------------------------------------------------------------------------------
+f = open("C:\\Users\\MICLAB\\Desktop\\demo.txt",'r')
+data = f.read()
+lw = data.split()
+d = {}
+for word in lw:
+if word not in d:
+d[word] = 1
+else:
+d[word] = d[word]+1
+print(d)
+
+Output:-
+{'python': 2, 'is': 2, 'open': 1, 'and': 1, 'very': 1, 'easy': 1, 'language': 1}
+-------------------------------------------------------------------------------------------------------------------
+f = open("C:\\Users\\MICLAB\\Desktop\\demo.txt",'r')
+print("The filepointer is at byte :", f.tell() )
+content = f.read();
+print("After reading, the filepointer is at:",f.tell())
+
+Output:-
+The filepointer is at byte : 0
+After reading, the filepointer is at: 49
+----------------------------------------------------------------------------------------------------
+f = open("C:\\Users\\MICLAB\\Desktop\\demo.txt",'r')
+print("The filepointer is at byte :",f.tell())
+f.seek(10);
+print("After reading, the filepointer is at:",f.tell())
+
+Output:-
+The filepointer is at byte : 0
+After reading, the filepointer is at: 10

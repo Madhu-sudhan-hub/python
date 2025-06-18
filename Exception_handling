@@ -1,0 +1,62 @@
+try:
+x = 10 / 0
+except Exception as e:
+print("An error occurred:", str(e))
+
+Output:-
+An error occurred: division by zero
+---------------------------------------------------------
+try:
+num = int(input("Enter a number: "))
+result = 10 / num
+print("Result:", result)
+except ValueError:
+print("Error: Invalid input! Please enter a valid number.")
+except ZeroDivisionError:
+print("Error: Division by zero!")
+
+Output:-
+Enter a number: 2
+Result: 5.0
+------------------------------------------------------------------------------------------
+try:
+num = int(input("Enter a number: "))
+result = 10 / num
+except ValueError:
+print("Error: Invalid input! Please enter a valid number.")
+except ZeroDivisionError:
+print("Error: Division by zero!")
+else:
+print("Result:", result)
+
+Output:-
+Enter a number: 2
+Result: 5.0
+----------------------------------------------------------------------------------------------
+try:
+file = open("myfile.txt", "r")
+except IOError:
+print("Error: Unable to read the file!")
+finally:
+file.close()
+
+Output:-
+"C:/Users/MICLAB/AppData/Local/Programs/Python/Python311/mydemo.py", line 6, in
+<module>
+file.close()
+NameError: name 'file' is not defined. Did you mean: 'filter'?
+--------------------------------------------------------------------------------------------------------------
+try:
+x = int(input('Enter a number upto 100: '))
+if x > 100:
+raise ValueError(x)
+except ValueError:
+print(x, "is out of allowed range")
+else:
+print(x, "is within the allowed range")
+
+Output:-
+Enter a number upto 100: 123
+123 is out of allowed range
+-------------------------------------------------------------------------------------------------
+
