@@ -1,0 +1,135 @@
+class Animal:
+ 
+   def sound(self):
+   
+     pass
+
+class Cat(Animal):
+ 
+   def sound(self):
+    
+    print("Meow")
+
+class Dog(Animal):
+
+    def sound(self):
+    
+    print("Woof")
+
+def make_sound(animal):
+ 
+   animal.sound()
+
+cat = Cat()
+
+dog = Dog()
+
+make_sound(cat)
+
+make_sound(dog)
+
+Output:-
+Meow
+
+Woof
+
+
+--------------------------------------------------------------
+class Shape:
+ 
+   def __init__(self,color):
+      
+  self.color = color
+  
+  def area(self):
+   
+     pass
+
+class Circle(Shape):
+
+    def __init__(self,color,radius):
+  
+      super().__init__(color)
+   
+     self.radius = radius
+
+    def area(self):
+
+       return 3.14 * self.radius ** 2
+
+class Rectangle(Shape):
+ 
+   def __init__(self,color,width,height):
+  
+      super().__init__(color)
+     
+   self.width = width
+      
+  self.height = height
+     
+   def area(self):
+     
+       return 
+self.width * self.height
+
+circle = Circle("Red",5)
+
+rectangle = Rectangle("Blue",4,6)
+
+print("Circle area:",circle.area())
+
+print("Rectangle area:",rectangle.area())
+
+
+
+Output:-
+Circle area: 78.5
+
+Rectangle area: None
+
+        
+---------------------------------------------------------------------
+ class BankAccount:
+    def __init__(self, account_number, balance):
+        self._account_number = account_number
+        self._balance = balance
+    def get_account_number(self):
+        return self._account_number
+    def get_balance(self):
+        return self._balance
+    def deposit(self, amount):
+     if amount > 0:
+        self._balance += amount
+        print("Deposit successful")
+     else:
+        print("Invalid amount for deposit")
+    def withdraw(self, amount):
+     if amount > 0 and amount <= self._balance:
+        self._balance -= amount
+        print("Withdrawal successful")
+     else:
+        print("Insufficient funds or invalid amount for withdrawal")
+account = BankAccount("1234567890", 1000)
+print("Account Number:",account.get_account_number())
+print("Balance:", account.get_balance())
+account.deposit(500)
+account.withdraw(200)
+account._account_number = "9876543210"
+account._balance = 5000
+print("Account Number:", account.get_account_number())
+print("Balance:", account.get_balance())
+
+Output:-
+Account Number: 1234567890
+
+Balance: 1000
+
+Deposit successful
+
+Withdrawal successful
+
+Account Number: 9876543210
+
+Balance: 5000
+
+-------------------------------------------------------------------------------------------------
